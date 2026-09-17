@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Practice pharmacy technician conversions and dose calculations with typed answers, multiple-choice quizzes, and worked explanations.">
+  <meta name="theme-color" content="#103f43">
+  <title>Pharmacy Math Lab | Practice for your next exam</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="questions.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="./" aria-label="Pharmacy Math Lab home"><span class="brand-icon" aria-hidden="true">÷</span><span>Pharmacy <b>Math Lab</b></span></a><span class="course-label">PHARMACY TECHNICIAN / EXAM PREP</span></header>
+  <main>
+    <div class="page-heading"><div><p class="eyebrow">A LITTLE PRACTICE. A LOT MORE CONFIDENCE.</p><h1>Make the math second nature.</h1><p class="intro">Conversions, dose calculations, and the reasoning behind them.</p></div><a class="pdf-link" href="study-guide.pdf" target="_blank" rel="noopener">Open study guide <span aria-hidden="true">↗</span></a></div>
+    <nav class="view-tabs" aria-label="Study views"><button id="practice-tab" class="active" aria-current="page">Practice lab</button><button id="reference-tab">Reference &amp; memory aids</button></nav>
+    <section id="practice-view" class="workspace" aria-label="Practice lab">
+      <aside class="settings panel"><p class="eyebrow">YOUR PRACTICE SESSION</p><details id="session-settings" open><summary><h2>Choose your focus</h2><span class="settings-toggle" aria-hidden="true">＋</span></summary><form id="settings-form">
+        <label for="topic">Topic</label><select id="topic"><option value="all">Everything · mixed review</option><option value="metric">Metric conversions</option><option value="household">Household measures</option><option value="weight">Pounds &amp; kilograms</option><option value="dose">Dose calculations</option><option value="fractions">Fractions &amp; decimals</option><option value="reasoning">Rules &amp; error spotting</option></select>
+        <label for="format">Answer style</label><select id="format"><option value="mixed">Mixed: type + multiple choice</option><option value="input">Typed answers</option><option value="choice">Multiple choice</option></select>
+        <p class="field-note">Typed-only sessions use calculation questions. Rules &amp; error spotting uses multiple choice.</p>
+        <label for="length">Session length</label><select id="length"><option value="10">10 questions · quick quiz</option><option value="20">20 questions · longer review</option><option value="all">All questions in this topic</option></select>
+        <button class="primary start" type="submit">Start a new session <span aria-hidden="true">→</span></button>
+      </form><p id="bank-count" class="bank-count"></p><div class="settings-note"><b>Learn from every answer.</b><p>Check your answer to reveal the result and worked solution. Each question counts once.</p></div></details></aside>
+      <div class="practice-main"><section id="quiz-panel" class="panel quiz-panel" aria-label="Current question"></section><section id="results-panel" class="panel results-panel" hidden></section>
+      <div class="study-strip"><span class="strip-label">THE QUICK CHECK</span><p>Smaller unit, bigger number.<br><b>Larger unit, smaller number.</b></p><span class="strip-mark" aria-hidden="true">× 1,000<br>÷ 1,000</span></div></div>
+    </section>
+    <section id="reference-view" hidden aria-label="Reference and memory aids"></section>
+    <footer><p>Based on your Pharmacy Technician Math study guide. Study exercises only; follow your program’s conversion and rounding rules.</p><p>Works on any device. Session scores stay in this open tab and are not synced across devices.</p></footer>
+  </main>
+  <noscript><p class="noscript">Enable JavaScript to use the practice questions. You can still open the study guide PDF above.</p></noscript>
+</body>
+</html>
