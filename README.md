@@ -2,6 +2,20 @@
 
 A responsive, standalone practice website based on the supplied Pharmacy Technician Math PDF and expanded study guide. No account, package installation, build step, API key, or paid service is required.
 
+## Use it right away
+
+Open `index.html` in a modern browser. Keep all the supplied files in the same folder. Questions, scoring, and reference material work offline. The external FDA reference links need internet access.
+
+## Put it on GitHub Pages
+
+1. Create a GitHub repository (a public repository works with GitHub Free).
+2. Extract the ZIP. Upload the **contents** of the `pharmacy-math-practice` folder to the repository root, including `index.html`, `styles.css`, `questions.js`, `app.js`, `favicon.svg`, and `study-guide.pdf`. Do not upload just the ZIP or place everything inside another folder.
+3. Commit the files to the `main` branch.
+4. In the repository, open **Settings → Pages**. Under **Build and deployment**, choose **Deploy from a branch**.
+5. Choose **main** and **/(root)**, then **Save**.
+6. When GitHub finishes publishing, open the website link shown on that Pages screen. Bookmark that link on your phone, tablet, or computer.
+
+The typical URL is `https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/`. All local links are relative, so repository subpaths work. GitHub Pages serves this as a static website. No custom domain is required. Instructions: https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
 
 ## Practice features
 
